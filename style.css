@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Arial', sans-serif; 
+}
+body {
+    background-color: linear-gradient(135deg, #0e0ad1, #2a5298); 
+    color: #fff; 
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
