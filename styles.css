@@ -32,17 +32,25 @@ body {
     text-decoration: none;
 }
 
-#form-container{
+/* This is the section that holds the text AND the form */
+.hero-section {
     display: flex;
-    flex-direction: column;
-    align-items: right;
+    justify-content: flex-start; /* This pushes everything inside to the RIGHT */
+    padding: 50px;
+    min-height: 80vh; 
+    align-items: center; /* This centers it vertically */
+}
+
+#form-container {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 15px;
+    width: 400px; /* Don't make it 1000px, that's too wide for a form! */
+    justify-content: start;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    align-items: right;
-    width: 500px;
-    height: 400px;
     gap: 15px;
 }
