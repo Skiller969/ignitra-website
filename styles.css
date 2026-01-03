@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Arial', sans-serif; 
+}
+
+body {
+    /* Fixed: Changed background-color to background */
+    background: linear-gradient(135deg, #3606e4, #13d876); 
+    background-attachment: fixed; /* Ensures gradient covers the whole page */
+    min-height: 100vh;
+    color: #fff; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+/* Added basic styling for nav-links so they aren't vertical */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+#form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    width: 500px;
+    height: 400px;
+    gap: 15px;
+}
