@@ -76,3 +76,75 @@ body {
     font-weight: normal;
     max-width: 600px;       
 }
+
+
+
+/*about section*/
+#h1abt{
+    font-size: 60px;
+    margin-bottom: 13px;    
+    text-transform: capitalize; 
+}
+
+#p1abt{
+    font-size: 24px;
+    font-weight: normal;
+    max-width: 800px;
+}
+
+#about-content{   
+    margin-top: 20vh;      
+    }
+
+#h2abt{
+    font-size: 28px;
+    margin-top: 40px;    
+    text-transform: capitalize; 
+}
+
+.p2abt{
+    margin: 20px;
+    font-size: 21px;
+}
+
+.contact-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 500px;
+    margin: 50px auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.accent-green { color: #13d876; }
+
+form { display: flex; flex-direction: column; gap: 20px; }
+
+/* Stacks Name and Phone side-by-side */
+.input-row { display: flex; gap: 15px; }
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* The green glow from your video */
+input:focus, textarea:focus {
+    border-color: #13d876;
+    box-shadow: 0 0 8px rgba(19, 216, 118, 0.4);
+}
+
+.btn-submit {
+    background: linear-gradient(135deg, #3606e4, #13d876);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
