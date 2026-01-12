@@ -19,10 +19,14 @@ body {
   justify-content: space-between;
   padding: 0 24px;
 }
-
 #logo {
-  width: 250px;
+  font-size: 35px;
+  color: white;
 }
+
+#logo a {
+  text-decoration: none;
+  color: white;}
 
 #nav-bar {
   display: flex;
@@ -59,13 +63,56 @@ body {
   margin: auto;
 }
 
-/* ================= WIP ================= */
-
-#wait {
-  text-align: center;
-  margin-top: 100px;
+/* 1. The Outer Section */
+.hpservices {
+    padding: 60px 10%;
+    text-align: center; /* Centers the 'Our Services' text */
+   
 }
 
+/* 2. The Heading */
+#h2srv {
+    font-size: 40px;
+    margin-bottom: 50px; /* Space between title and cards */
+}
+
+/* 3. The Grid Container (The Fix) */
+.service-cards {
+    display: grid;
+    /* This creates 3 equal columns that automatically adjust */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; /* Creates even space between your cards */
+    
+}
+
+/* 4. The Individual Cards */
+.service-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 50px rgba(0,0,0,0.1);
+    transition: 0.3s ease; /* Makes hover effects smooth */
+    font-size: 20px;
+}
+
+/*===== footer =====*/
+#footer {
+  background-color: darkslategrey;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;}
+
+#nav-barft { display: flex;
+  gap: 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  justify-content: center;
+}
+#nav-barft a {
+  color: white;
+  text-decoration: none;
+}
 /* ================= ABOUT ================= */
 
 #about-content {
@@ -145,15 +192,14 @@ textarea {
     flex-direction: column;
     font-size: 18px;
     gap: 12px;
-    background-color:rgb(11, 41, 41) ;
     width: 100%;
-
-  .nav-a {
+  }
+  #nav-bar a {
   display: flex;
     align-items: center;
     justify-content: center;
   }
-  }
+  
   #h1,
   #h1abt {
     font-size: 32px;
@@ -167,5 +213,8 @@ textarea {
   .input-row {
     flex-direction: column;
   }
-}
 
+  .hpservices {
+    padding: 40px 5%;
+    overflow: auto;
+  }}  
