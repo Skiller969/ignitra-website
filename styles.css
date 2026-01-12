@@ -145,8 +145,15 @@ textarea {
     flex-direction: column;
     font-size: 18px;
     gap: 12px;
-  }
+    background-color:rgb(11, 41, 41) ;
+    width: 100%;
 
+  .nav-a {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  }
   #h1,
   #h1abt {
     font-size: 32px;
@@ -161,3 +168,4 @@ textarea {
     flex-direction: column;
   }
 }
+
