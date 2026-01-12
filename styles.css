@@ -1,219 +1,163 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 /* ================= HEADER ================= */
 
 #header {
-    width: 100%;
-    height: 118px;
-    background-color: darkslategrey;
-    display: flex;
-    align-items: center;
-    padding: 0 24px;
+  width: 100%;
+  height: 118px;
+  background-color: darkslategrey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
 }
 
 #logo {
-    width: 250px;
-    height: auto;
+  width: 250px;
 }
 
 #nav-bar {
-    display: flex;
-    gap: 20px;
-    margin-left: auto;
-    font-size: 35px;
+  display: flex;
+  gap: 20px;
+  font-size: 35px;
 }
 
 #nav-bar a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 #nav-bar a:hover {
-    color: #cccccc;
+  color: #cccccc;
 }
 
 /* ================= HERO ================= */
 
 #content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 100px;
+  text-align: center;
+  margin-top: 100px;
 }
 
-#h1 {
-    font-size: 60px;
-    margin-bottom: 10px;
-    text-transform: capitalize;
+#h1,
+#h1abt {
+  font-size: 60px;
+  margin-bottom: 10px;
 }
 
-#p1 {
-    font-size: 24px;
-    font-weight: normal;
-    max-width: 600px;
+#p1,
+#p1abt {
+  font-size: 24px;
+  max-width: 800px;
+  margin: auto;
 }
 
 /* ================= WIP ================= */
 
 #wait {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 100px;
+  text-align: center;
+  margin-top: 100px;
 }
 
 /* ================= ABOUT ================= */
 
 #about-content {
-    margin-top: 20vh;
-}
-
-#h1abt {
-    font-size: 60px;
-    margin-bottom: 13px;
-    text-transform: capitalize;
-}
-
-#p1abt {
-    font-size: 24px;
-    max-width: 800px;
+  margin-top: 20vh;
+  text-align: center;
 }
 
 #h2abt {
-    font-size: 28px;
-    margin-top: 40px;
-    text-transform: capitalize;
+  font-size: 28px;
+  margin-top: 40px;
 }
 
 .p2abt {
-    margin: 20px;
-    font-size: 21px;
+  margin: 20px auto;
+  font-size: 21px;
+  max-width: 900px;
 }
 
 /* ================= CONTACT ================= */
 
 .contact-card {
-    background: #fff;
-    padding: 40px;
-    border-radius: 20px;
-    max-width: 500px;
-    margin: 50px auto;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 500px;
+  margin: 50px auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 .accent-green {
-    color: #13d876;
+  color: #13d876;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .input-row {
-    display: flex;
-    gap: 15px;
+  display: flex;
+  gap: 15px;
 }
 
 input,
 textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    outline: none;
-    transition: 0.3s;
-}
-
-input:focus,
-textarea:focus {
-    border-color: #13d876;
-    box-shadow: 0 0 8px rgba(19, 216, 118, 0.4);
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
 
 .btn-submit {
-    background: linear-gradient(135deg, #3606e4, #13d876);
-    color: white;
-    border: none;
-    padding: 15px;
-    border-radius: 30px;
-    font-weight: bold;
-    cursor: pointer;
-    text-transform: uppercase;
+  background: linear-gradient(135deg, #3606e4, #13d876);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-/* ================= MOBILE FIX (STYLE SAME, LAYOUT FIXED) ================= */
+/* ================= MOBILE FIX ================= */
 
 @media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    height: auto;
+    padding: 16px;
+  }
 
-    #header {
-        height: auto;
-        flex-direction: column;
-        padding: 16px;
-    }
+  #logo {
+    width: 180px;
+    margin-bottom: 12px;
+  }
 
-    #logo {
-        width: 180px;
-        margin-bottom: 12px;
-    }
+  #nav-bar {
+    flex-direction: column;
+    font-size: 18px;
+    gap: 12px;
+  }
 
-    #nav-bar {
-        flex-direction: column;
-        align-items: center;
-        font-size: 18px;
-        gap: 12px;
-        margin: 0;
-    }
+  #h1,
+  #h1abt {
+    font-size: 32px;
+  }
 
-    #content,
-    #wait {
-        margin-top: 40px;
-        padding: 0 16px;
-    }
+  #p1,
+  #p1abt {
+    font-size: 16px;
+  }
 
-    #h1,
-    #h1abt {
-        font-size: 32px;
-    }
-
-    #p1,
-    #p1abt {
-        font-size: 16px;
-    }
-
-    #h2abt {
-        font-size: 22px;
-    }
-
-    .p2abt {
-        font-size: 16px;
-    }
-
-    #about-content {
-        margin-top: 60px;
-    }
-
-    .input-row {
-        flex-direction: column;
-    }
-
-    .contact-card {
-        margin: 24px 16px;
-        padding: 24px;
-    }
+  .input-row {
+    flex-direction: column;
+  }
 }
