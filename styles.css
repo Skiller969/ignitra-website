@@ -174,6 +174,34 @@ textarea {
   cursor: pointer;
 }
 
+/*================== service card ============== */
+
+
+.service-row {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 60px 0;
+    margin: 45px;
+}
+
+#serh2{
+    margin-top: 100px;
+  text-align: center;
+}
+
+
+.service-row:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.service-content, .service-image {
+    flex: 1;
+    box-shadow: rgb(rgb(49, 35, 35), rgb(21, 31, 21), rgb(11, 11, 14));
+}
+
+
+
 /* ================= MOBILE FIX ================= */
 
 @media (max-width: 768px) {
@@ -217,4 +245,11 @@ textarea {
   .hpservices {
     padding: 40px 5%;
     overflow: auto;
-  }}  
+  }
+
+/* ================= SERVICE PAGE IMAGE FIX ================= */
+}
+
+
+
+
