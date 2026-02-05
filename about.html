@@ -1,75 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about Ignitra - The spark behind your digital growth">
   <link rel="stylesheet" href="styles.css">
   <title>About Ignitra</title>
 </head>
+
 <body>
 
-<header id="header">
-  <a id="logo" href="index.html">LOGO
-  </a>
+  <header id="header">
+    <a id="logo" href="index.html">LOGO</a>
 
-  <nav id="nav-bar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+    <nav id="nav-bar" aria-label="Main navigation">
+      <a class="nav-a" href="index.html">Home</a>
+      <a class="nav-a" href="about.html" aria-current="page">About</a>
+      <a class="nav-a" href="services.html">Services</a>
+      <a class="nav-a" href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-<section id="hero-section">
-  <div id="content">
-    <h1 id="h1abt">IGNITRA</h1>
-    <p id="p1abt">The Spark Behind Your Digital Growth</p>
-  </div>
-</section>
-
-<section id="about-section">
-  <div id="about-content">
-    <h2 id="h2abt">About Us</h2>
-    <p class="p2abt">
-      At Ignitara Media, we believe every brand has a story that deserves to be heard.
-      We bridge the gap between businesses and their target audience through data-driven strategies and creative storytelling.
-    </p>
-
-    <p class="p2abt">
-      We are a collective of young, bold creators turning ambitious visions into high-impact digital realities.
-    </p>
-
-    <h2 id="h2abt">What we offer</h2>
-    <p class="p2abt">
-      We don't just “do” creative work; we design solutions. By putting purpose before polish, we stay aligned with your goals from day one.
-    </p>
-  </div>
-</section>
-
-<section class="contact-card">
-  <form>
-    <h2>LETS WORK <span class="accent-green">TOGETHER</span></h2>
-
-    <div class="input-row">
-      <input type="text" placeholder="Name*" required>
-      <input type="tel" placeholder="Phone Number">
+  <section id="hero-section">
+    <div id="content">
+      <h1 id="h1abt">IGNITRA</h1>
+      <p id="p1abt">The Spark Behind Your Digital Growth</p>
     </div>
+  </section>
 
-    <input type="email" placeholder="Email ID*" required>
-    <textarea placeholder="Message*" required></textarea>
+  <section id="about-section">
+    <div id="about-content">
+      <h2 id="h2abt">About Us</h2>
+      <p class="p2abt">
+        At Ignitra Media, we believe every brand has a story that deserves to be heard.
+        We bridge the gap between businesses and their target audience through data-driven strategies and creative
+        storytelling.
+      </p>
 
-    <button class="btn-submit">SUBMIT</button>
-  </form>
-</section>
-<footer id="footer">
-  <p>&copy; 2025 Ignitara Media</p>
-  <nav id="nav-barft">
-    <a class="nav-a" href="index.html">Home</a>
-    <a class="nav-a" href="about.html">About</a>
-    <a class="nav-a" href="services.html">Services</a>
-    <a class="nav-a" href="contact.html">Contact</a>
-  </nav>
-  
-</footer>
+      <p class="p2abt">
+        We are a collective of young, bold creators turning ambitious visions into high-impact digital realities.
+      </p>
+
+      <h2 id="h2abt">What we offer</h2>
+      <p class="p2abt">
+        We don't just "do" creative work; we design solutions. By putting purpose before polish, we stay aligned with
+        your goals from day one.
+      </p>
+    </div>
+  </section>
+
+  <section class="contact-card">
+    <form action="#" method="post">
+      <h2>LETS WORK <span class="accent-green">TOGETHER</span></h2>
+
+      <div class="input-row">
+        <label for="name" class="sr-only">Name</label>
+        <input type="text" id="name" name="name" placeholder="Name*" required>
+
+        <label for="phone" class="sr-only">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+      </div>
+
+      <label for="email" class="sr-only">Email</label>
+      <input type="email" id="email" name="email" placeholder="Email ID*" required>
+
+      <label for="message" class="sr-only">Message</label>
+      <textarea id="message" name="message" placeholder="Message*" rows="5" required></textarea>
+
+      <button type="submit" class="btn-submit">SUBMIT</button>
+    </form>
+  </section>
+
+  <footer id="footer">
+    <p>&copy; 2025 Ignitra</p>
+    <nav id="nav-barft" aria-label="Footer navigation">
+      <a class="nav-a" href="index.html">Home</a>
+      <a class="nav-a" href="about.html">About</a>
+      <a class="nav-a" href="services.html">Services</a>
+      <a class="nav-a" href="contact.html">Contact</a>
+    </nav>
+  </footer>
+
 </body>
+
 </html>
